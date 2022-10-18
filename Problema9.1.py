@@ -37,7 +37,7 @@ class PilaDinamica:
 
     # Este método cuenta la cantidad de elementos de la pila a través de un "len" e imprime la cantidad
     def tamPila(self):
-        print("La pila tiene", len(self.__listaPila), "elementos😮")
+        print("La pila tiene", len(self.__listaPila), "elementos")
 
     # Este método usa "clear" para eliminar todos los elementos que existan en la pila
     def limpiarPila(self):
@@ -69,7 +69,7 @@ def copiarPila(pilaFuente):
 
 
 pi = PilaDinamica()  # instancia
-print("----------------☺-Pila-Fuente-☺------------------")
+print("-----------------Pila-Fuente-------------------")
 # se insertan elementos del 1 al 9
 pi.insertar(1)
 pi.insertar(2)
@@ -95,14 +95,12 @@ print(pi)
 # print("-método-que-limpia-la-pila-")
 # pi.limpiarPila()
 
-# se le asigna todos los elementos que contiene la instancia de "PilaDinamica" como valor de entrada
-# al método que se encarga de copiar la pila y se imprime
-print("\n(-🙃Pila-Copiada-Invertida🙃-)")
-p1 = copiarInvertida(pi)
-print(p1)
+#print("\n(-Pila-Copiada-Invertida-)")
+#p1 = copiarInvertida(pi)
+#print(p1)
 
 # copia de la pila fuente y en el mismo orden
-print("\n----------------☺-Pila-Copiada-en-el-mismo-orden☺------------------")
+print("\n-----------------Pila-Copiada-en-el-mismo-orden-----------------")
 p2 = copiarPila(p1)
 print(p2)
 
